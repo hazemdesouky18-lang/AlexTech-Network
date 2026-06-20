@@ -22,9 +22,9 @@ Set up a complete internal network in Cisco Packet Tracer that includes:
 ## 📁 Project Structure
 
 ```
-network-project/
+AlexTech-Network/
 │
-├── Phase_1_project_network.pkt   # Cisco Packet Tracer file (Phase 1)
+├── Phase_1_project_network.pkt   # Cisco Packet Tracer file (Phase 1 & 2)
 └── README.md                     # Project documentation
 ```
 
@@ -41,20 +41,20 @@ network-project/
 
 ---
 
-## 🔜 Phase 2 Tasks — Due: Week 14, May 10, 2026
+## ✅ Phase 2 Tasks — Due: Week 14, May 10, 2026
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Open web browser on each client and access `www.alextech.eg` — confirm page loads | 🔄 Pending |
-| 2 | Use Simulation Mode to trace full packet journey (DNS query → response → HTTP GET → response) | 🔄 Pending |
-| 3 | Document every step: protocols, IP addresses, port numbers | 🔄 Pending |
-| 4 | Present complete working system to instructor (AlexTech founders) | 🔄 Pending |
+| 1 | Open web browser on each client and access `www.alextech.eg` — confirm page loads | ✅ Done |
+| 2 | Use Simulation Mode to trace full packet journey (DNS query → response → HTTP GET → response) | ✅ Done |
+| 3 | Document every step: protocols, IP addresses, port numbers | ✅ Done |
+| 4 | Present complete working system to instructor (AlexTech founders) | ✅ Done |
 
 ---
 
 ## 🖧 Network Topology
 
-| Device | Role | 
+| Device | Role |
 |--------|------|
 | Server 1 | DNS Server |
 | Server 2 | HTTP Web Server |
@@ -65,28 +65,45 @@ network-project/
 
 ---
 
+## 🔄 Full Packet Journey (Phase 2)
+
+```
+Client PC
+   │
+   ├─── DNS Query (UDP, Port 53) ──────► DNS Server
+   │◄── DNS Response (IP of HTTP Server) ─┘
+   │
+   ├─── HTTP GET (TCP, Port 80) ───────► HTTP Server
+   │◄── HTTP Response (Web Page) ──────┘
+   │
+   └─── ✅ www.alextech.eg loads in browser
+```
+
+---
+
 ## 📦 Required Deliverables
 
 - [x] Packet Tracer file (`.pkt`)
-- [ ] DNS & HTTP configuration screenshots
-- [ ] Process documentation (protocols, IPs, ports)
-- [ ] Live demo / presentation
+- [x] DNS & HTTP configuration screenshots
+- [x] Process documentation (protocols, IPs, ports)
+- [x] Live demo / presentation
 
 ---
 
 ## 🛠️ Tools Used
 
 - Cisco Packet Tracer
-- DNS (Port 53)
-- HTTP (Port 80)
+- DNS (Port 53 / UDP)
+- HTTP (Port 80 / TCP)
 - `nslookup` command for testing
+- Packet Tracer Simulation Mode
 
 ---
 
 ## 👥 Team
 
-> *Add your name(s) here*
+> Desouky Hatem
 
 ---
 
-*Phase 1 submitted as part of the Networking course project.*
+*Project completed — Phase 1 & Phase 2 submitted as part of the Networking course.*
